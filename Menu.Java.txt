@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class Menu {
+    public static void main(String[]args) {
+        Scanner input = new Scanner(System.in);
+        
+        int op = 0;
+        int a,b,operacao;
+        
+        
+        
+        System.out.println("|---------------------|");
+        System.out.println("| O que Deseja Fazer? |");
+        System.out.println("|    1. Somar         |");
+        System.out.println("|    2. Multiplicar   |");
+        System.out.println("|    3. Dividir       |");
+        System.out.println("|    4. Subtrair      |");
+        System.out.println("|---------------------|");
+        op=input.nextInt();
+        
+        switch (op){
+            case 1:
+                System.out.println("Insira dois Números Inteiros:");
+                a=input.nextInt();
+                b=input.nextInt();
+                operacao = a+b;
+                System.out.printf("SOMA = %d\n", operacao);
+                
+                break;
+                
+            case 2:
+               System.out.println("Insira Dois Números Inteiros:");
+               a=input.nextInt();
+               b=input.nextInt();
+               operacao = a*b;
+               System.out.printf("MULTIPLICAÇÃO = %d\n", operacao);
+               
+                break;
+                
+            case 3:
+               System.out.println("Insira dois Números Inteiros:");
+               a=input.nextInt();
+               b=input.nextInt();
+               operacao = a/b;
+               System.out.printf("DIVISÃO = %d\n", operacao);
+               
+                break;
+                
+            case 4:
+               System.out.println("Insira Dois Números Inteiros:");
+               a=input.nextInt();
+               b=input.nextInt();
+               operacao = a-b;
+               System.out.printf("SUBTRAÇÃO = %d\n",operacao);
+                break;
+            default:
+                System.out.println("Comando Inválido!\n");
+                
+                
+                
+                        
+        }
+        System.out.println("Processo Finalizado");
+    }
+    
+}
