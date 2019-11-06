@@ -1,0 +1,113 @@
+import java.util.Scanner;
+public class Exercício {
+    public static void main(String[]args) {
+        Scanner input = new Scanner(System.in);
+        int op,op1,op2,op3,tot;
+        
+        
+        System.out.println("|-----------------------------|");
+        System.out.println("|      ESCOLHA UMA CATEGORIA  |");
+        System.out.println("|         1. Animais          |");
+        System.out.println("|         2. Insetos          |");
+        System.out.println("|         3. Filmes           |");
+        System.out.println("|         4. Artistas         |");
+        System.out.println("|-----------------------------|");
+        op=input.nextInt();
+        
+        switch (op) {
+            case 1:
+                System.out.println("Você Escolheu a Opção Animais\n");
+                System.out.println("");
+                System.out.println("REGRAS DO JOGO");
+                System.out.println("Você só pode escolher uma opção de resposta tudo Bem");
+                System.out.println("Serão 3 perguntas para testar seu conhecimento sobre a opção escolhida\n");
+                System.out.println("Bom.. então vamos começar\n");
+                System.out.println("Pergunta 01: Os Golfinhos, Baleias e Tubarões fazem parte de qual classe dos animais?");
+                System.out.println("|------------------|");
+                System.out.println("|  1. Insetos      |");
+                System.out.println("|  2. Mamíferos    |");
+                System.out.println("|  3. Herbívoros   |");
+                System.out.println("|------------------|");
+                op1=input.nextInt();
+        switch (op1) {
+            case 1:
+                System.out.println("Resposta Errada! Foi por Pouco\n");
+                break;
+            case 2:
+                System.out.println("Resposta Correta! Você Acertou.\n");
+                break;
+            case 3:
+                System.out.println("Resposta Errada! Foi por Pouco\n");
+                break;
+            default:
+                System.out.println("Opção Inválida");
+                break;
+                
+                
+        }        
+                System.out.println("Pergunta 02: Qual animal tem dentes afiados e dorme de cabeça para baixo?");
+                System.out.println("|----------------|");
+                System.out.println("|  1. Morcego    |");
+                System.out.println("|  2. Coruja     |");
+                System.out.println("|  3. Bem-te-vi  |");
+                System.out.println("|----------------|");
+                op2=input.nextInt();
+        switch (op2) {
+            case 1:
+                System.out.println("Resposta Certa! Você Acertou.\n");
+                break;
+            case 2:
+                System.out.println("Resposta Errada! Que pena...\n");
+                break;
+            case 3:
+                System.out.println("Resposta Errada!\n");
+                break;
+            default:
+                System.out.println("Opção Inválida");
+                break;
+        }      
+            System.out.println("Pergunta 03: Quem é o Rei da Selva?");
+            System.out.println("|---------------|");
+            System.out.println("|  1. Hiena     |");
+            System.out.println("|  2. Macaco    |");
+            System.out.println("|  3. Leão      |");
+            System.out.println("|---------------|");
+            op3=input.nextInt();
+            
+        switch (op3) {
+            case 1:
+                System.out.println("Resposta Errada! Não foi dessa vez");
+                break;
+            case 2:
+                System.out.println("Resposta Errada! Foi por Pouco");
+                break;
+            case 3:
+                System.out.println("Resposta Certa! Você Acertou.\n");
+                break;
+            default:
+                System.out.println("Opção Inválida");
+                break;
+        }    
+        
+            System.out.println("Diga quantas perguntas você acertou:");
+            tot=input.nextInt();
+            
+        switch (tot) {
+            case 1:
+                System.out.println("Que pena Você acertou apenas 1 Pergunta. Na próxima você consegue");
+                break;
+            case 2:
+                System.out.println("Muito Bom Você Acertou 2 Perguntas!");
+                break;
+            case 3:
+                System.out.println("Parabéns!! Você acertou todas as Perguntas!");
+                break;
+            default:
+                System.out.println("Comando Inválido!");
+        }    
+            
+                break;
+                
+        }
+    }
+}
